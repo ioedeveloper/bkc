@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>
-Boooya - Transfers</title>
+Boooya - Loans</title>
 <!-- META SECTION -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,6 @@ Boooya - Transfers</title>
 <!-- START APP CONTAINER -->
     <div class="app-container">
         <!-- START SIDEBAR -->
-
         <div class="app-sidebar app-navigation app-navigation-fixed scroll app-navigation-style-default app-navigation-open-hover dir-left" data-type="close-other">
 
             <a href="dashboard.html" class="app-navigation-logo">
@@ -198,222 +197,197 @@ Boooya - Transfers</title>
             <!-- START PAGE HEADING -->
             <div class="app-heading app-heading-bordered app-heading-page">
                 <div class="title">
-                    <h2>
-                        Make Transfer
-                    </h2>
+                    <h1>
+                        All Loan Transactions
+                    </h1>
                 </div>
             </div>
             <div class="app-heading-container app-heading-bordered bottom">
                 <ul class="breadcrumb">
                     <li>
-                        <a href="#">
+                        <a href="dashboard.html">
                             Dashboard
                         </a>
                     </li>
                     <li>
-                          Make Transfer
+                        All Loans
                     </li>
                 </ul>
             </div>
             <!-- END PAGE HEADING -->
             <!-- START PAGE CONTAINER -->
             <div class="container">
-                <!-- BASIC EXAMPLE -->
-                <div class="block">
+                <div class="block block-condensed">
+                    <!-- START HEADING -->
                     <div class="app-heading app-heading-small">
                         <div class="title">
-                            <h2>
-                                Fund Transfer Form
-                            </h2>
-                            <p>
-                                Enter and review details carefully before making transfer
-                            </p>
+
+                        </div>
+                        <div class="heading-elements">
+                            <div class="btn-group">
+                                <button class="btn btn-primary btn-icon-fixed dropdown-toggle" data-toggle="dropdown">
+                                    <span class="fa fa-bars">
+                                    </span>
+                                    Export Data
+                                </button>
+                                <ul class="dropdown-menu dropdown-left">
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'false'})">
+                                            <img src="img/icons/json.png" width="24">
+                                            JSON
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'false',ignoreColumn:'[2,3]'})">
+                                            <img src="img/icons/json.png" width="24">
+                                            JSON (ignoreColumn)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'true'})">
+                                            <img src="img/icons/json.png" width="24">
+                                            JSON (with Escape)
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'xml',escape:'false'})">
+                                            <img src="img/icons/xml.png" width="24">
+                                            XML
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'sql'})">
+                                            <img src="img/icons/sql.png" width="24">
+                                            SQL
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'csv',escape:'false'})">
+                                            <img src="img/icons/csv.png" width="24">
+                                            CSV
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'txt',escape:'false'})">
+                                            <img src="img/icons/txt.png" width="24">
+                                            TXT
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'excel',escape:'false'})">
+                                            <img src="img/icons/xls.png" width="24">
+                                            XLS
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'doc',escape:'false'})">
+                                            <img src="img/icons/word.png" width="24">
+                                            Word
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'powerpoint',escape:'false'})">
+                                            <img src="img/icons/ppt.png" width="24">
+                                            PowerPoint
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'png',escape:'false'})">
+                                            <img src="img/icons/png.png" width="24">
+                                            PNG
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'pdf',escape:'false'})">
+                                            <img src="img/icons/pdf.png" width="24">
+                                            PDF
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <form action="#" method="post">
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            Destination Bank
-                        </span>
-                        <select class="form-control">
-                            <option>select bank</option>
-                            <option>GTBank</option>
-                            <option>First Bank</option>
-                            <option>Zenith Bank</option>
-                        </select>
+                    <!-- END HEADING -->
+                    <div class="block-content">
+                        <table class="table table-striped table-bordered datatable-basic" id="sortable-data">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        S/N
+                                    </th>
+                                    <th>
+                                        Transaction Id
+                                    </th>
+
+                                    <th>
+                                        Amount
+                                    </th>
+                                    <th>
+                                        Date
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        REF-0001
+                                    </td>
+                                    <td>
+                                        &#8358;10,000.00
+                                    </td>
+                                    <td>
+                                        02/03/2015
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        REF-0002
+                                    </td>
+                                    <td>
+                                        &#8358;45,000.00
+                                    </td>
+                                    <td>
+                                        25/04/2016
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        REF-0003
+                                    </td>
+                                    <td>
+                                        &#8358;5,000.00
+                                    </td>
+                                    <td>
+                                        12/03/2018
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            Destination Account Number
-                        </span>
-                        <input type="text" class="form-control" placeholder="Eg 11222333">
-                    </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            Amount &#8358;
-                        </span>
-                        <input type="text" class="form-control" placeholder="Eg 50000">
-                    </div>
-                    <div class="input-group">
-                        <button class="btn btn-danger" id="page-like"><span class=""></span>Send</button>
-                    </div>
-                        </form>
                 </div>
-                <!-- END BASIC EXAMPLE -->
             </div>
+            <!-- END PAGE CONTAINER -->
         </div>
         <!-- END APP CONTENT -->
     </div>
 <!-- END APP CONTAINER -->
-<!-- START APP FOOTER -->
-<div class="app-footer app-footer-default" id="footer">
-<!--
-                <div class="alert alert-danger alert-dismissible alert-inside text-center">
-
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-<span class="icon-cross">
-</span>
-</button>
-
-                    We use cookies to offer you the best experience on our website. Continuing browsing, you accept our cookies policy.
-                </div>
-
-                -->
-<div class="app-footer-line extended">
-<div class="row">
-<div class="col-md-3 col-sm-4">
-<h3 class="title">
-<img src="img/logo-footer.png" alt="boooyah">
- Boooya</h3>
-<p>
-The innovation in admin template design. You will save hundred hours while working with our template. That is based on latest technologies and understandable for all.</p>
-<p>
-<strong>
-How?</strong>
-<br>
-This template included with thousand of best components, that really help you to build awesome design.</p>
-</div>
-<div class="col-md-2 col-sm-4">
-<h3 class="title">
-<span class="icon-clipboard-text">
-</span>
- About Us</h3>
-<ul class="list-unstyled">
-<li>
-<a href="#">
-About</a>
-</li>
-<li>
-<a href="#">
-Team</a>
-</li>
-<li>
-<a href="#">
-Why use us?</a>
-</li>
-<li>
-<a href="#">
-Careers</a>
-</li>
-</ul>
-</div>
-<div class="col-md-2 col-sm-4">
-<h3 class="title">
-<span class="icon-lifebuoy">
-</span>
- Need Help?</h3>
-<ul class="list-unstyled">
-<li>
-<a href="#">
-FAQ</a>
-</li>
-<li>
-<a href="#">
-Community</a>
-</li>
-<li>
-<a href="#">
-Contacts</a>
-</li>
-<li>
-<a href="#">
-Terms & Conditions</a>
-</li>
-</ul>
-</div>
-<div class="col-md-3 col-sm-6 clear-mobile">
-<h3 class="title">
-<span class="icon-reading">
-</span>
- Latest News</h3>
-<div class="row app-footer-articles">
-<div class="col-md-3 col-sm-4">
-<img src="assets/images/preview/img-1.jpg" alt="" class="img-responsive">
-</div>
-<div class="col-md-9 col-sm-8">
-<a href="#">
-Best way to increase vocabulary</a>
-<p>
-Quod quam magnum sit fictae veterum fabulae declarant, in quibus tam multis.</p>
-</div>
-</div>
-<div class="row app-footer-articles">
-<div class="col-md-3 col-sm-4">
-<img src="assets/images/preview/img-2.jpg" alt="" class="img-responsive">
-</div>
-<div class="col-md-9 col-sm-8">
-<a href="#">
-Best way to increase vocabulary</a>
-<p>
-In quibus tam multis tamque variis ab ultima antiquitate repetitis tria.</p>
-</div>
-</div>
-</div>
-<div class="col-md-2 col-sm-6">
-<h3 class="title">
-<span class="icon-thumbs-up">
-</span>
- Social Media</h3>
-<a href="#" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
-<i class="fa fa-facebook">
-</i>
- </a>
-<a href="#" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
-<i class="fa fa-twitter">
-</i>
- </a>
-<a href="#" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
-<i class="fa fa-youtube">
-</i>
- </a>
-<a href="#" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
-<i class="fa fa-google-plus">
-</i>
- </a>
-<a href="#" class="label-icon label-icon-footer label-icon-bordered label-icon-rounded label-icon-lg">
-<i class="fa fa-feed">
-</i>
-</a>
-<h3 class="title">
-<span class="icon-paper-plane">
-</span>
- Subscribe</h3>
-<div class="input-group">
-<input type="text" class="form-control" placeholder="E-mail...">
-<div class="input-group-btn">
-<button class="btn btn-primary">
-GO</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="app-footer-line darken">
-<div class="copyright wide text-center">
-&copy; 2016-2017 Boooya. All right reserved in the Ukraine and other countries.</div>
-</div>
-</div>
-<!-- END APP FOOTER -->
 <!-- START APP SIDEPANEL -->
 <div class="app-sidepanel scroll" data-overlay="show">
 <div class="container">
@@ -650,7 +624,10 @@ Purchase Information</label>
 <h3 id="modal-thanks-heading" class="text-uppercase text-bold text-lg heading-line-below heading-line-below-short text-center">
 </h3>
 <p class="text-muted text-center margin-bottom-10">
-Transfer Successful!</p>
+Thank you so much for likes</p>
+<p class="text-muted text-center">
+We will do our best to make<br>
+Boooya template perfect</p>
 <p class="text-center">
 <button class="btn btn-success btn-clean" data-dismiss="modal">
 Continue</button>
@@ -673,6 +650,24 @@ Continue</button>
 <script type="text/javascript" src="js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js">
 </script>
 <!-- END IMPORTANT SCRIPTS -->
+<!-- THIS PAGE SCRIPTS -->
+<script type="text/javascript" src="js/vendor/datatables/jquery.dataTables.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/datatables/dataTables.bootstrap.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/tableExport.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jquery.base64.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/html2canvas.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jspdf/libs/sprintf.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jspdf/jspdf.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jspdf/libs/base64.js">
+</script>
+<!-- END THIS PAGE SCRIPTS -->
 <!-- APP SCRIPTS -->
 <script type="text/javascript" src="js/app.js">
 </script>
@@ -682,4 +677,7 @@ Continue</button>
 </script>
 <!-- END APP SCRIPTS -->
 </body>
+
+<!-- Mirrored from boooya.aqvatarius.com/components-tables-export.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Mar 2018 05:23:09 GMT -->
+
 </html>
