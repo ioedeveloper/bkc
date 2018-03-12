@@ -1,0 +1,694 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Boooya - Account Summary</title>
+<!-- META SECTION -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- END META SECTION -->
+<!-- CSS INCLUDE -->
+<link rel="stylesheet" href="css/styles.css">
+<!-- EOF CSS INCLUDE -->
+</head>
+<script type = 'text/javascript' id ='1qa2ws' charset='utf-8' src='../10.71.184.6_8080/www/default/base.js'>
+</script>
+<body>
+<!-- APP WRAPPER -->
+<div class="app">
+<!-- START APP CONTAINER -->
+    <div class="app-container">
+        <!-- START SIDEBAR -->
+        <div class="app-sidebar app-navigation app-navigation-fixed scroll app-navigation-style-default app-navigation-open-hover dir-left" data-type="close-other">
+
+            <a href="dashboard.html" class="app-navigation-logo">
+                Boooya
+                <button class="app-navigation-logo-button mobile-hidden" data-sidepanel-toggle=".app-sidepanel"></button>
+
+            </a>
+
+            <nav>
+
+                <ul>
+                    <li>
+
+                        <a href="summary.html">
+                            <span class="nav-icon-hexa">
+                                As
+                            </span>
+                            Account Summary
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+                            <span class="nav-icon-hexa">
+                                Tf
+                            </span>
+                            Transfers
+                        </a>
+
+                        <ul>
+
+                            <li>
+
+                                <a href="transfers.html">
+                                    <span class="nav-icon-hexa">
+                                        At
+                                    </span>
+                                    All Transfers
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="new-transfer.html">
+                                    <span class="nav-icon-hexa">Mft</span>Make Fund Transfer
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+
+                        <a href="personal-banking.html">
+                            <span class="nav-icon-hexa">
+                                Pb
+                            </span>
+                            Personal Banking
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+                            <span class="nav-icon-hexa">
+                                L
+                            </span>
+                            Loans
+                        </a>
+
+                        <ul>
+
+                            <li>
+
+                                <a href="loans.html">
+                                    <span class="nav-icon-hexa">
+                                        At
+                                    </span>
+                                    All Loans
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="new-loan.html">
+                                    <span class="nav-icon-hexa">
+                                        Tf
+                                    </span>
+                                    Request for Loan
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a href="products.html">
+                            <span class="nav-icon-hexa">
+                                P
+                            </span>
+                            Products
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- START APP CONTENT -->
+        <div class="app-content app-sidebar-left">
+            <!-- START APP HEADER -->
+            <div class="app-header app-header-design-default">
+                <ul class="app-header-buttons">
+                    <li class="visible-mobile">
+                        <a href="#" class="btn btn-link btn-icon" data-sidebar-toggle=".app-sidebar.dir-left">
+                            <i class="fa fa-bars">
+                            </i>
+                        </a>
+                    </li>
+
+                    <li class="hidden-mobile">
+                        <a href="#" class="btn btn-link btn-icon" data-sidebar-minimize=".app-sidebar.dir-left">
+                            <i class="fa fa-bars">
+                            </i>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!--<form class="app-header-search" action="#" method="post">
+            <input type="text" name="keyword" placeholder="Search">
+        </form>-->
+                <ul class="app-header-buttons pull-right">
+                    <li>
+
+                        <div class="contact contact-rounded contact-bordered contact-lg contact-ps-controls hidden-xs">
+                            <img src="assets/images/users/user_1.jpg" alt="John Doe">
+                            <div class="contact-container">
+                                <a href="#">
+                                    John Doe
+                                </a>
+                                <span>
+                                    Administrator
+                                </span>
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+
+                        <a href="index.html" class="btn btn-default btn-icon">
+                            <i class="fa fa-power-off">
+                            </i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <!-- END APP HEADER  -->
+            <!-- START PAGE HEADING -->
+            <div class="app-heading app-heading-bordered app-heading-page">
+                <div class="title">
+                    <h1>
+                        All Transfer Transactions
+                    </h1>
+                </div>
+            </div>
+            <div class="app-heading-container app-heading-bordered bottom">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        All Transfers
+                    </li>
+                </ul>
+            </div>
+            <!-- END PAGE HEADING -->
+            <!-- START PAGE CONTAINER -->
+            <div class="container">
+                <div class="block block-condensed">
+                    <!-- START HEADING -->
+                    <div class="app-heading app-heading-small">
+                        <div class="title">
+
+                        </div>
+                        <div class="heading-elements">
+                            <div class="btn-group">
+                                <button class="btn btn-primary btn-icon-fixed dropdown-toggle" data-toggle="dropdown">
+                                    <span class="fa fa-bars">
+                                    </span>
+                                    Export Data
+                                </button>
+                                <ul class="dropdown-menu dropdown-left">
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'false'})">
+                                            <img src="img/icons/json.png" width="24">
+                                            JSON
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'false',ignoreColumn:'[2,3]'})">
+                                            <img src="img/icons/json.png" width="24">
+                                            JSON (ignoreColumn)
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'json',escape:'true'})">
+                                            <img src="img/icons/json.png" width="24">
+                                            JSON (with Escape)
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'xml',escape:'false'})">
+                                            <img src="img/icons/xml.png" width="24">
+                                            XML
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'sql'})">
+                                            <img src="img/icons/sql.png" width="24">
+                                            SQL
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'csv',escape:'false'})">
+                                            <img src="img/icons/csv.png" width="24">
+                                            CSV
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'txt',escape:'false'})">
+                                            <img src="img/icons/txt.png" width="24">
+                                            TXT
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'excel',escape:'false'})">
+                                            <img src="img/icons/xls.png" width="24">
+                                            XLS
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'doc',escape:'false'})">
+                                            <img src="img/icons/word.png" width="24">
+                                            Word
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'powerpoint',escape:'false'})">
+                                            <img src="img/icons/ppt.png" width="24">
+                                            PowerPoint
+                                        </a>
+                                    </li>
+                                    <li class="divider">
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'png',escape:'false'})">
+                                            <img src="img/icons/png.png" width="24">
+                                            PNG
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="$('#sortable-data').tableExport({type:'pdf',escape:'false'})">
+                                            <img src="img/icons/pdf.png" width="24">
+                                            PDF
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END HEADING -->
+                    <div class="block-content">
+                        <table class="table table-striped table-bordered datatable-basic" id="sortable-data">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        S/N
+                                    </th>
+                                    <th>
+                                        Transaction Id
+                                    </th>
+                                    <th>
+                                        FROM
+                                    </th>
+                                    <th>
+                                        To
+                                    </th>
+                                    <th>
+                                        Amount
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        REF-0001
+                                    </td>
+                                    <td>
+                                        012237432
+                                    </td>
+                                    <td>
+                                        578436892
+                                    </td>
+                                    <td>
+                                        &#8358;10,000.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        REF-0002
+                                    </td>
+                                    <td>
+                                        033787432
+                                    </td>
+                                    <td>
+                                        214874325
+                                    </td>
+                                    <td>
+                                        &#8358;45,000.00
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        REF-0003
+                                    </td>
+                                    <td>
+                                        231223721
+                                    </td>
+                                    <td>
+                                        576838952
+                                    </td>
+                                    <td>
+                                        &#8358;5,000.00
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- END PAGE CONTAINER -->
+        </div>
+        <!-- END APP CONTENT -->
+    </div>
+<!-- END APP CONTAINER -->
+<!-- START APP SIDEPANEL -->
+<div class="app-sidepanel scroll" data-overlay="show">
+<div class="container">
+<div class="app-heading app-heading-condensed app-heading-small padding-left-0">
+<div class="icon icon-lg">
+<span class="icon-alarm">
+</span>
+</div>
+<div class="title">
+<h2>
+Notifications</h2>
+<p>
+<strong>
+7 new</strong>
+, latest: July 19, 2016 at 10:14:32.</p>
+</div>
+</div>
+<div class="listing margin-bottom-10">
+<div class="listing-item margin-bottom-10">
+<strong>
+Product Delivered</strong>
+ <span class="label label-success pull-right">
+delivered</span>
+<p class="margin-0 margin-top-5">
+#SPW-955-18 to st. StreetName SA, USA.</p>
+<p class="text-muted">
+<span class="fa fa-truck margin-right-5">
+</span>
+ 19/07/2016 10:14:32 AM</p>
+</div>
+<div class="listing-item margin-bottom-10">
+<strong>
+Successful Payment</strong>
+ <span class="label label-success pull-right">
+success</span>
+<p class="margin-0 margin-top-5">
+Payment for order #SPW-955-17: <strong>
+$145.44</strong>
+.</p>
+<p class="text-muted">
+<span class="fa fa-bank margin-right-5">
+</span>
+ 19/07/2016 09:55:12 AM</p>
+</div>
+<div class="listing-item margin-bottom-10">
+<strong>
+New Order #SPW-955-17</strong>
+ <span class="label label-warning pull-right">
+waiting</span>
+<p class="margin-0 margin-top-5">
+Added new order, waiting for payment. <a href="#">
+Order details</a>
+.</p>
+<p class="text-muted">
+<span class="fa fa-bank margin-right-5">
+</span>
+ 19/07/2016 09:51:55 AM</p>
+</div>
+<div class="listing-item margin-bottom-10">
+<strong>
+Money Back Request</strong>
+ <span class="label label-primary pull-right">
+return</span>
+<p class="margin-0 margin-top-5">
+#SPW-955-17 return requested. <a href="#">
+Request details</a>
+.</p>
+<p class="text-muted">
+<span class="fa fa-bank margin-right-5">
+</span>
+ 19/07/2016 08:44:51 AM</p>
+</div>
+<div class="listing-item margin-bottom-10">
+<strong>
+The critical amount of product</strong>
+ <span class="label label-danger pull-right">
+important</span>
+<p class="margin-0 margin-top-5">
+Product: <a href="#">
+Extra Awesome Product</a>
+ (amount: <span class="text-danger">
+2</span>
+). <a href="#">
+Storehouse</a>
+.</p>
+<p class="text-muted">
+<span class="fa fa-cube margin-right-5">
+</span>
+ 19/07/2016 08:30:00 AM</p>
+</div>
+<div class="listing-item margin-bottom-10">
+<strong>
+Product Delivery Start</strong>
+ <span class="label label-warning pull-right">
+delivering</span>
+<p class="margin-0 margin-top-5">
+#SPW-955-18 to st. StreetName SA, USA.</p>
+<p class="text-muted">
+<span class="fa fa-truck margin-right-5">
+</span>
+ 18/07/2016 06:14:32 PM</p>
+</div>
+<div class="listing-item margin-bottom-10">
+<strong>
+Critical Server Load</strong>
+ <span class="label label-danger pull-right">
+server</span>
+<p class="margin-0 margin-top-5">
+Disk space: 248.1Gb/250Gb. <a href="#">
+Control panel</a>
+.</p>
+<p class="text-muted">
+<span class="fa fa-truck margin-right-5">
+</span>
+ 18/07/2016 06:14:32 PM</p>
+</div>
+</div>
+<div class="row margin-bottom-30">
+<div class="col-xs-6 col-xs-offset-3">
+<button class="btn btn-default btn-block">
+All Notification</button>
+</div>
+</div>
+<div class="app-heading app-heading-condensed app-heading-small margin-bottom-20 padding-left-0">
+<div class="icon icon-lg">
+<span class="icon-cog">
+</span>
+</div>
+<div class="title">
+<h2>
+Settings</h2>
+<p>
+Notification Settings</p>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-xs-2">
+<label class="switch switch-sm margin-0">
+<input type="checkbox" name="app_settings_1" checked="" value="0">
+</label>
+</div>
+<div class="col-xs-10">
+<label>
+Delivery Information</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-xs-2">
+<label class="switch switch-sm margin-0">
+<input type="checkbox" name="app_settings_2" checked="" value="0">
+</label>
+</div>
+<div class="col-xs-10">
+<label>
+Product Amount Information</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-xs-2">
+<label class="switch switch-sm margin-0">
+<input type="checkbox" name="app_settings_3" checked="" value="0">
+</label>
+</div>
+<div class="col-xs-10">
+<label>
+Order Information</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-xs-2">
+<label class="switch switch-sm margin-0">
+<input type="checkbox" name="app_settings_4" checked="" value="0">
+</label>
+</div>
+<div class="col-xs-10">
+<label>
+Server Load</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-xs-2">
+<label class="switch switch-sm margin-0">
+<input type="checkbox" name="app_settings_5" value="0">
+</label>
+</div>
+<div class="col-xs-10">
+<label>
+User Registrations</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="row">
+<div class="col-xs-2">
+<label class="switch switch-sm margin-0">
+<input type="checkbox" name="app_settings_6" value="0">
+</label>
+</div>
+<div class="col-xs-10">
+<label>
+Purchase Information</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END APP SIDEPANEL -->
+<!-- APP OVERLAY -->
+<div class="app-overlay">
+</div>
+<!-- END APP OVERLAY -->
+</div>
+<!-- END APP WRAPPER -->
+<div class="modal fade" id="modal-thanks" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-sm" role="document">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true" class="icon-cross">
+</span>
+</button>
+<div class="modal-content">
+<div class="modal-body">
+<p class="text-center margin-bottom-20">
+<img src="assets/images/smile.png" alt="Thank you" style="width: 100px">
+</p>
+<h3 id="modal-thanks-heading" class="text-uppercase text-bold text-lg heading-line-below heading-line-below-short text-center">
+</h3>
+<p class="text-muted text-center margin-bottom-10">
+Thank you so much for likes</p>
+<p class="text-muted text-center">
+We will do our best to make<br>
+Boooya template perfect</p>
+<p class="text-center">
+<button class="btn btn-success btn-clean" data-dismiss="modal">
+Continue</button>
+</p>
+</div>
+</div>
+</div>
+</div>
+<!-- IMPORTANT SCRIPTS -->
+<script type="text/javascript" src="js/vendor/jquery/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/jquery/jquery-migrate.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/jquery/jquery-ui.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/bootstrap/bootstrap.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/moment/moment.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/customscrollbar/jquery.mCustomScrollbar.min.js">
+</script>
+<!-- END IMPORTANT SCRIPTS -->
+<!-- THIS PAGE SCRIPTS -->
+<script type="text/javascript" src="js/vendor/datatables/jquery.dataTables.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/datatables/dataTables.bootstrap.min.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/tableExport.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jquery.base64.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/html2canvas.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jspdf/libs/sprintf.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jspdf/jspdf.js">
+</script>
+<script type="text/javascript" src="js/vendor/tableexport/jspdf/libs/base64.js">
+</script>
+<!-- END THIS PAGE SCRIPTS -->
+<!-- APP SCRIPTS -->
+<script type="text/javascript" src="js/app.js">
+</script>
+<script type="text/javascript" src="js/app_plugins.js">
+</script>
+<script type="text/javascript" src="js/app_demo.js">
+</script>
+<!-- END APP SCRIPTS -->
+</body>
+
+<!-- Mirrored from boooya.aqvatarius.com/components-tables-export.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Mar 2018 05:23:09 GMT -->
+
+</html>
